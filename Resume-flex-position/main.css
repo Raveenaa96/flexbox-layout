@@ -18,8 +18,8 @@ header {
     align-items: center;
 }
 .profile_pic>img{
-    height: 50px;
-    width: 55px;
+    height: 75px;
+    width: 80px;
 }
 .navbar {
     width: 75%;
@@ -43,25 +43,28 @@ margin: 25px;
 main {
     display: flex;
 }
-.links {
+.sidebar {
     width: 25%;
     height: 100%;
     background-color: rgb(196, 117, 117);
     position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 12%;
+    text-align: center;
+    row-gap: 60px;
     padding-top: 4%;
-    overflow-y: scroll;
+    word-wrap: break-word;
 }
-.links a{
+.sidebar a{
     text-decoration: none;
     color: black;
     font-weight: bold;
 
 }
-.links a:hover {
+.sidebar a:hover {
     color: rgb(220, 220, 161);
 }
 .main_content {
@@ -70,6 +73,8 @@ main {
     margin-left: 25%;
     padding: 30px 50px;
     line-height: 25px;
+    position: relative;
+    top: 70px;
 }
 .main_content h3 {
     color: brown;
@@ -87,6 +92,7 @@ main {
 }
 .education_table tr>th,td {
     padding: 10px;
+    word-break: break-all;
 }
 .dot {
     margin-left: 3px;
